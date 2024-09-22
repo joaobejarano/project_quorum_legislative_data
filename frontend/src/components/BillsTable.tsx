@@ -17,11 +17,11 @@ const BillsTable = () => {
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
-          <TableRow>
-            <TableCell>Projeto de Lei</TableCell>
-            <TableCell>Patrocinador</TableCell>
-            <TableCell>Legisladores Apoiando</TableCell>
-            <TableCell>Legisladores Opondo</TableCell>
+          <TableRow sx={{ backgroundColor: '#4b0082' }}> {/* Fundo roxo escuro */}
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Projeto de Lei</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Patrocinador</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Legisladores Apoiando</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Legisladores Opondo</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

@@ -17,10 +17,10 @@ const LegislatorsTable = () => {
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
-          <TableRow>
-            <TableCell>Legislador</TableCell>
-            <TableCell>Projetos Apoiados</TableCell>
-            <TableCell>Projetos Opostos</TableCell>
+          <TableRow sx={{ backgroundColor: '#4b0082' }}> {/* Fundo roxo escuro */}
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Legislador</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Projetos Apoiados</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Projetos Opostos</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

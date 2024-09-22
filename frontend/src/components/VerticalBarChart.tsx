@@ -1,9 +1,11 @@
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { useEffect, useState } from 'react';
 import { getBillsStats } from '../services/api';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+// Registrar componentes e plugins necessários do Chart.js
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ChartDataLabels);
 
 const VerticalBarChart = () => {
   const [chartData, setChartData] = useState({
@@ -12,12 +14,14 @@ const VerticalBarChart = () => {
       {
         label: 'Apoiadores',
         data: [],
-        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+        backgroundColor: 'rgba(153, 102, 255, 0.6)', // Cor roxo claro
+        borderRadius: 10, // Barras com pontas arredondadas
       },
       {
         label: 'Opositores',
         data: [],
-        backgroundColor: 'rgba(255, 99, 132, 0.6)',
+        backgroundColor: 'rgba(75, 0, 130, 0.6)', // Cor roxo escuro
+        borderRadius: 10, // Barras com pontas arredondadas
       },
     ],
   });
@@ -35,12 +39,14 @@ const VerticalBarChart = () => {
           {
             label: 'Apoiadores',
             data: supporters,
-            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+            backgroundColor: 'rgba(153, 102, 255, 0.6)', // Cor roxo claro
+            borderRadius: 10, // Barras com pontas arredondadas
           },
           {
             label: 'Opositores',
             data: opposers,
-            backgroundColor: 'rgba(255, 99, 132, 0.6)',
+            backgroundColor: 'rgba(75, 0, 130, 0.6)', // Cor roxo escuro
+            borderRadius: 10, // Barras com pontas arredondadas
           },
         ],
       });
@@ -49,7 +55,49 @@ const VerticalBarChart = () => {
     fetchData();
   }, []);
 
-  return <Bar data={chartData} />;
+  // Opções de estilização do gráfico
+  const options = {
+    plugins: {
+      legend: {
+        position: 'top' as const, // Definir explicitamente como constante
+      },
+      tooltip: {
+        enabled: true,
+      },
+      datalabels: {
+        anchor: 'end' as const,
+        align: 'top' as const,
+        formatter: (value: number) => value, // Mostra o valor no final da barra
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          autoSkip: false, // Não pula labels grandes
+          maxRotation: 0, // Não rotaciona as labels
+          minRotation: 0,
+        },
+        grid: {
+          display: false, // Remove as grades de fundo do eixo X
+        },
+      },
+      y: {
+        beginAtZero: true, // Garantir que o eixo Y começa do zero
+        ticks: {
+          precision: 0, // Mostra números inteiros
+        },
+        grid: {
+          display: false, // Remove as grades de fundo do eixo Y
+        },
+      },
+    },
+  };
+
+  return (
+    <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px' }}> {/* Fundo branco com cantos arredondados */}
+      <Bar data={chartData} options={options} />
+    </div>
+  );
 };
 
 export default VerticalBarChart;

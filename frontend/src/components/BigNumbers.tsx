@@ -33,7 +33,7 @@ const BigNumbers = () => {
           <Typography variant="h6" color="textSecondary">
             Total de Legisladores
           </Typography>
-          <Typography variant="h4" color="primary">
+          <Typography variant="h4" color='rgba(153, 102, 255, 0.6)'>
             {totalLegislators}
           </Typography>
         </Paper>
@@ -45,7 +45,7 @@ const BigNumbers = () => {
           <Typography variant="h6" color="textSecondary">
             Total de Projetos de Lei
           </Typography>
-          <Typography variant="h4" color="primary">
+          <Typography variant="h4" color='rgba(153, 102, 255, 0.6)'>
             {totalBills}
           </Typography>
         </Paper>
@@ -57,7 +57,7 @@ const BigNumbers = () => {
           <Typography variant="h6" color="textSecondary">
             Total de Votos Apoiados
           </Typography>
-          <Typography variant="h4" color="primary">
+          <Typography variant="h4" color='rgba(153, 102, 255, 0.6)'>
             {totalSupportedVotes}
           </Typography>
         </Paper>
@@ -69,7 +69,7 @@ const BigNumbers = () => {
           <Typography variant="h6" color="textSecondary">
             Total de Votos Opostos
           </Typography>
-          <Typography variant="h4" color="primary">
+          <Typography variant="h4" color='rgba(153, 102, 255, 0.6)'>
             {totalOpposedVotes}
           </Typography>
         </Paper>
