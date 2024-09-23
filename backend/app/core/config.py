@@ -1,0 +1,1 @@
+# If we were dealing with a system where we needed database settings or environment variables, we could define them here.

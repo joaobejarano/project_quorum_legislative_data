@@ -1,0 +1,1 @@
+# I didn't use it for this project, but the schemas folder would contain the validation models and data structures used in API requests and responses.
