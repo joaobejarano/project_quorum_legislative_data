@@ -1,7 +1,7 @@
 # Step by step guide to running the application locally
 
 
-## Pré-requisitos:
+## Prerequisites:
  - Node.js
  - Python 3.8+
  - Git
