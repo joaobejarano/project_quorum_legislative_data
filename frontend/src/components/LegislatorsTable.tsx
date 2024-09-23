@@ -18,9 +18,9 @@ const LegislatorsTable = () => {
       <Table>
         <TableHead>
           <TableRow sx={{ backgroundColor: '#4b0082' }}> {/* Fundo roxo escuro */}
-            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Legislador</TableCell>
-            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Projetos Apoiados</TableCell>
-            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Projetos Opostos</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Legislator</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Supported Projects</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Opposing Projects</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

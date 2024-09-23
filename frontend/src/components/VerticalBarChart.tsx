@@ -12,13 +12,13 @@ const VerticalBarChart = () => {
     labels: [],
     datasets: [
       {
-        label: 'Apoiadores',
+        label: 'Supporters',
         data: [],
         backgroundColor: 'rgba(153, 102, 255, 0.6)', // Cor roxo claro
         borderRadius: 10, // Barras com pontas arredondadas
       },
       {
-        label: 'Opositores',
+        label: 'Opponents',
         data: [],
         backgroundColor: 'rgba(75, 0, 130, 0.6)', // Cor roxo escuro
         borderRadius: 10, // Barras com pontas arredondadas

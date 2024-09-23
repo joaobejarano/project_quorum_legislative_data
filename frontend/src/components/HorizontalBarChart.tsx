@@ -33,12 +33,12 @@ const StackedHorizontalBarChart = () => {
         labels,
         datasets: [
           {
-            label: 'Projetos Apoiados',
+            label: 'Supported Projects',
             data: supported,
             backgroundColor: 'rgba(153, 102, 255, 0.6)', // Cor roxo claro
           },
           {
-            label: 'Projetos Opostos',
+            label: 'Opposing Projects',
             data: opposed,
             backgroundColor: 'rgba(75, 0, 130, 0.6)', // Cor roxo escuro
           },

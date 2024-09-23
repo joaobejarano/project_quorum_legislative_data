@@ -18,10 +18,10 @@ const BillsTable = () => {
       <Table>
         <TableHead>
           <TableRow sx={{ backgroundColor: '#4b0082' }}> {/* Fundo roxo escuro */}
-            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Projeto de Lei</TableCell>
-            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Patrocinador</TableCell>
-            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Legisladores Apoiando</TableCell>
-            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Legisladores Opondo</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Bill</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Sponsor</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Legislators Supporting</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Opposing Legislators</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

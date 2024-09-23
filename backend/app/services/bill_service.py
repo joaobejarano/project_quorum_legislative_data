@@ -25,9 +25,9 @@ def get_all_bill_statistics():
             try:
                 sponsor_name = legislators_df[legislators_df['id'] == bill['sponsor_id']].iloc[0]['name']
             except IndexError:
-                sponsor_name = "Desconhecido"
+                sponsor_name = "Unknown"
         else:
-            sponsor_name = "Desconhecido"
+            sponsor_name = "Unknown"
 
         stats.append({
             "id": bill['id'],

@@ -31,7 +31,7 @@ const BigNumbers = () => {
       <Grid item xs={3}>
         <Paper elevation={3} style={{ padding: '20px', textAlign: 'center' }}>
           <Typography variant="h6" color="textSecondary">
-            Total de Legisladores
+            Total Legislators
           </Typography>
           <Typography variant="h4" color='rgba(153, 102, 255, 0.6)'>
             {totalLegislators}
@@ -43,7 +43,7 @@ const BigNumbers = () => {
       <Grid item xs={3}>
         <Paper elevation={3} style={{ padding: '20px', textAlign: 'center' }}>
           <Typography variant="h6" color="textSecondary">
-            Total de Projetos de Lei
+            Total Bills
           </Typography>
           <Typography variant="h4" color='rgba(153, 102, 255, 0.6)'>
             {totalBills}
@@ -55,7 +55,7 @@ const BigNumbers = () => {
       <Grid item xs={3}>
         <Paper elevation={3} style={{ padding: '20px', textAlign: 'center' }}>
           <Typography variant="h6" color="textSecondary">
-            Total de Votos Apoiados
+            Total Votes Supported
           </Typography>
           <Typography variant="h4" color='rgba(153, 102, 255, 0.6)'>
             {totalSupportedVotes}
@@ -67,7 +67,7 @@ const BigNumbers = () => {
       <Grid item xs={3}>
         <Paper elevation={3} style={{ padding: '20px', textAlign: 'center' }}>
           <Typography variant="h6" color="textSecondary">
-            Total de Votos Opostos
+            Total Opposed Votes
           </Typography>
           <Typography variant="h4" color='rgba(153, 102, 255, 0.6)'>
             {totalOpposedVotes}
